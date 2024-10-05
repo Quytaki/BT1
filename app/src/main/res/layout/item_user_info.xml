@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- TextView Họ và Tên -->
+    <TextView
+        android:id="@+id/textViewItemName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Họ và Tên: Nguyen Van A"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- TextView Email -->
+    <TextView
+        android:id="@+id/textViewItemEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Email: email@example.com"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewItemName"
+        android:layout_marginTop="4dp" />
+
+    <!-- TextView Số Điện Thoại -->
+    <TextView
+        android:id="@+id/textViewItemPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Số điện thoại: 0123456789"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewItemEmail"
+        android:layout_marginTop="4dp" />
+
+    <!-- TextView Giới Tính -->
+    <TextView
+        android:id="@+id/textViewItemGender"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Giới tính: Nam"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewItemPhone"
+        android:layout_marginTop="4dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
